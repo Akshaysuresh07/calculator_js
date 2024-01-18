@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calc-body">
+          <div class="calc-screen">
+            <div class="inp">
+              <input id="result" type="read-only">
+            </div>
+          </div>
+          <div class="calc-button-row">
+            <div  class="button c" onclick="clearScreen()">C</div>
+            <div id="del" class="button l " onclick="deleteinp()">Del</div>
+            <div class="button l"onclick="displaycontent('%')">%</div>
+            <div class="button l" onclick="displaycontent('/')">/</div>
+          </div>
+          <div class="calc-button-row">
+            <div class="button" onclick="displaycontent ('7')">7</div>
+            <div class="button" onclick="displaycontent('8')">8</div>
+            <div class="button" onclick="displaycontent('9')">9</div>
+            <div class="button l " onclick="displaycontent('*')">x</div>
+          </div>
+          <div class="calc-button-row">
+            <div class="button" onclick="displaycontent('4')">4</div>
+            <div class="button" onclick="displaycontent('5')">5</div>
+            <div class="button" onclick="displaycontent('6')">6</div>
+            <div class="button l" onclick="displaycontent('-')">−</div>
+          </div>
+          <div class="calc-button-row">
+            <div class="button" onclick="displaycontent('1')">1</div>
+            <div class="button" onclick="displaycontent('2')">2</div>
+            <div class="button" onclick="displaycontent('3')">3</div>
+            <div class="button l" onclick="displaycontent('+')">+</div>
+          </div>
+          <div class="calc-button-row">
+            <div class="button" onclick="displaycontent('.')">.</div>
+            <div class="button" onclick="displaycontent('0')">0</div>
+            <div class="button">
+              </div>
+                <div class="button l" onclick="finaloutput()">=</div>
+            </div>
+          </div>
+        </div>
+    <script src="./main.js"></script>
+</body>
+</html>
+\
